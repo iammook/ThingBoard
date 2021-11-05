@@ -1,0 +1,11 @@
+var details = {};
+details.Humidity = msg.Humidity;
+
+if (metadata.prevAlarmDetails) {
+    var prevDetails = JSON.parse(metadata.prevAlarmDetails);
+    details.count = prevDetails.count + 1;
+} else {
+    details.count = 1;
+}
+
+return details;
