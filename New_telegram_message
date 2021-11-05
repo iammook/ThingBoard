@@ -1,0 +1,7 @@
+var newMsg = {};
+    newMsg.to = "Ucc9f4dec0d64bdd13838a6402c73c78b";
+var newMsg2 = {};
+    newMsg.messages = [newMsg2];
+    newMsg2.type = "text";
+    newMsg2.text = "Alarm!! The " + metadata.deviceName + " Humidity is " + msg.details.Humidity;
+return {msg: newMsg, metadata: metadata, msgType: msgType};
